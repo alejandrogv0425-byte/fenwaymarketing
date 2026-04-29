@@ -3,7 +3,9 @@
 Marketing website starter built with Next.js + TypeScript.
 
 ## Live website link
-- https://fenwaymarketing.com
+- Uses `NEXT_PUBLIC_SITE_URL` from your environment.
+- Local default: `http://localhost:3000`.
+- If you want a production link, set `NEXT_PUBLIC_SITE_URL` to your deployed domain (for example, `https://www.yourdomain.com`).
 
 ## Tech stack
 - Next.js 16

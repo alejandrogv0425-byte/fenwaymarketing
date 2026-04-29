@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Hero } from "@/components/sections/hero";
 
 const services = [
@@ -6,6 +5,8 @@ const services = [
   { title: "Paid Media", description: "Performance campaigns across search and social with clear ROI tracking." },
   { title: "Conversion Optimization", description: "Landing-page and funnel improvements that increase lead volume." }
 ];
+
+const publicSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export default function HomePage() {
   return (
@@ -27,7 +28,7 @@ export default function HomePage() {
       <section className="container" style={{ paddingBottom: "4rem" }}>
         <h2>Website link</h2>
         <p>
-          Public site URL: <Link href="https://fenwaymarketing.com">https://fenwaymarketing.com</Link>
+          Public site URL: <a href={publicSiteUrl}>{publicSiteUrl}</a>
         </p>
       </section>
     </>
